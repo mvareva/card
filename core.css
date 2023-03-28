@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oxygen&family=Questrial&family=Raleway&family=Roboto&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: top
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+ol,
+ul,
+menu {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+form,
+button,
+select,
+input {
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	background-color: transparent;
+	border-radius: 0;
+	border: none;
+	margin: 0;
+	padding: 0;
+	text-align: left
+}
+
+form:invalid,
+button:invalid,
+select:invalid,
+input:invalid {
+	box-shadow: none
+}
+
+input::-ms-clear {
+	display: none
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:active,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover {
+	transition-duration: 5000s;
+	transition-property: background-color
+}
+
+details summary {
+	list-style: none
+}
+
+details ::marker,
+details ::-webkit-details-marker {
+	display: none
+}
+
+button > * {
+	position: relative
+}
+
+* {
+	box-sizing: border-box
+}
+
+html {
+	font-size: 55.5%
+}
+
+html,
+html * {
+	-webkit-text-size-adjust: none
+}
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-feature-settings: "liga", "kern", "salt";
+	font-kerning: normal;
+	text-rendering: optimizeLegibility
+}
+
+input::placeholder,
+input,
+button,
+form,
+body {
+	font-family: 'Inter', sans-serif;
+}
+
+em,
+i {
+	font-style: italic
+}
+
+em em,
+em i,
+i em,
+i i {
+	font-style: normal
+}
+
+em em em,
+em em i,
+em i em,
+em i i,
+i em em,
+i em i,
+i i em,
+i i i {
+	font-style: italic
+}
+
+del {
+	font-style: line-through
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+@font-face {
+	font-family: 'Inter', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Inter&family=Oxygen&family=Raleway&family=Roboto&display=swap');
+	font-stretch: normal;
+	font-style: normal;
+	font-weight: 600
+}
+
+@font-face {
+	font-family: 'Inter', sans-serif;
+	src: url('https://fonts.googleapis.com/css2?family=Inter&family=Oxygen&family=Raleway&family=Roboto&display=swap');
+	font-stretch: normal;
+	font-style: italic;
+	font-weight: 600
+}
+
+:root {
+	--rem-conversion: 0.1rem;
+	--typography--size: 10;
+	--typography--shoulder: calc(1 - var(--typography--cap-height));
+	--typography--shoulder--top: calc(var(--typography--shoulder) - var(--typography--shoulder--bottom));
+	--typography--leading--previous: var(--typography--leading);
+	--typography--size--previous: var(--typography--size);
+	--typography--cap-height: 0.715;
+	--typography--x-height: 0.513;
+	--typography--shoulder--bottom: 0.124;
+	--typography--shoulder--input: 0.063
+}
+
+:root,
+.medium {
+	--typography--inset--left: -0.055;
+	--typography--inset--right: -0.04;
+	--typography--weight: 600;
+	--typography--underline--clear: 0.1;
+	--typography--underline--inset: -0.044;
+	--typography--underline--offset: 0.034;
+	--typography--underline: 0.074;
+	--typography--icon--stroke: 0.12
+}
+
+.body {
+	--typography--leading: 1.33333333
+}
+
+.body + * {
+	--typography--leading--previous: 1.33333333
+}
+
+:root,
+.solid {
+	--typography--leading: 1
+}
+
+nobr,
+.nowrap {
+	white-space: nowrap
+}
+
+h1,
+h2,
+h3,
+input,
+label,
+li,
+p {
+	--typography--tracking--override: var(--typography--tracking);
+	--typography--letter-spacing: calc(var(--typography--tracking--override, var(--typography--tracking, 0)) * 1em);
+	--typography--margin--left: calc(var(--typography--inset--left) * 1em);
+	--typography--margin--right: calc(var(--typography--inset--right) * 1em);
+	--typography--underline--margin: calc(var(--typography--underline--inset) * 1em);
+	--typography--underline--clearing: calc(var(--typography--underline--clear) * 1em);
+	--typography--underline--thickness: calc(var(--typography--underline) * 1em);
+	--typography--underline--top: calc(var(--typography--underline--offset) * 1em);
+	font-weight: var(--typography--weight);
+	letter-spacing: var(--typography--letter-spacing);
+	--typography--size--rendered: var(--typography--size--override, var(--typography--size)) * var(--rem-conversion);
+	--typography--font-size: calc(var(--typography--scale, 1) * var(--typography--size--rendered));
+	--typography--line-height: calc(var(--typography--leading) * var(--typography--size--rendered));
+	--typography--leading--remainder: calc((var(--typography--leading) - 1) / 2);
+	--typography--shift: calc((var(--typography--shoulder) + var(--typography--shoulder--top)) * (1 - var(--typography--scale, 1)));
+	--typography--leading--bottom: calc(var(--typography--shoulder--bottom) + var(--typography--leading--remainder) + var(--typography--shift, 0));
+	--typography--leading--top: calc(var(--typography--shoulder--top) + var(--typography--leading--remainder) - var(--typography--shift, 0));
+	--typography--margin--bottom: calc(-1 * var(--typography--leading--bottom) * var(--typography--size--rendered));
+	--typography--margin--top: calc(-1 * var(--typography--leading--top) * var(--typography--size--rendered));
+	color: var(--color);
+	display: block;
+	font-size: var(--typography--font-size);
+	line-height: var(--typography--line-height);
+	margin-left: var(--typography--margin--left);
+	margin-right: var(--typography--margin--right);
+	max-width: calc(100% - var(--typography--margin--left) - var(--typography--margin--right) + var(--rem-conversion));
+	overflow-wrap: break-word
+}
+
+@supports (display: flow-root) {
+
+	h1,
+	h2,
+	h3,
+	input,
+	label,
+	li,
+	p {
+		display: flow-root
+	}
+}
+
+h1:before,
+h1:after,
+h2:before,
+h2:after,
+h3:before,
+h3:after,
+input:before,
+input:after,
+label:before,
+label:after,
+li:before,
+li:after,
+p:before,
+p:after {
+	content: '';
+	display: block;
+	visibility: hidden
+}
+
+h1:before,
+h2:before,
+h3:before,
+input:before,
+label:before,
+li:before,
+p:before {
+	margin-top: calc(var(--typography--margin--top) - (var(--typography--margin--top--shift, 0) * var(--typography--size--rendered)))
+}
+
+h1:after,
+h2:after,
+h3:after,
+input:after,
+label:after,
+li:after,
+p:after {
+	margin-bottom: var(--typography--margin--bottom)
+}
+
+h1 svg,
+h2 svg,
+h3 svg,
+input svg,
+label svg,
+li svg,
+p svg {
+	--typography--icon--size: calc(var(--typography--x-height) * 1em);
+	--typography--icon--stroke-width: calc(var(--typography--icon--stroke) * 1em);
+	fill: rgba(var(--color--rgb--override, var(--color--rgb)), 1);
+	height: var(--typography--icon--size);
+	opacity: var(--color--alpha, 1);
+	overflow: visible;
+	stroke-width: var(--typography--icon--stroke-width);
+	stroke: rgba(var(--color--rgb--override, var(--color--rgb)), 1);
+	transform: rotate(var(--rotate))
+}
+
+h1 + h1,
+h1 + h2,
+h1 + h3,
+h1 + li,
+h1 + p,
+h2 + h1,
+h2 + h2,
+h2 + h3,
+h2 + li,
+h2 + p,
+h3 + h1,
+h3 + h2,
+h3 + h3,
+h3 + li,
+h3 + p,
+li + h1,
+li + h2,
+li + h3,
+li + li,
+li + p,
+p + h1,
+p + h2,
+p + h3,
+p + li,
+p + p {
+	--layout--typography--font-size: var(--layout--typography--size, var(--typography--size--override, var(--typography--size))) * var(--rem-conversion);
+	--layout--typography--line-height: var(--layout--typography--leading, var(--typography--leading)) * var(--layout--typography--font-size);
+	--layout--typography--leading--between: var(--layout--typography--font-size) * (var(--layout--typography--leading, var(--typography--leading)) - 1);
+	--layout--typography--shoulder: var(--layout--typography--font-size) * var(--typography--shoulder);
+	--layout--typography--leading-shoulder: calc(var(--layout--typography--leading--between) + var(--layout--typography--shoulder));
+	margin-top: var(--layout--typography--leading-shoulder)
+}
+
+p a {
+	background-image: linear-gradient(to var(--typography--underline--direction, bottom), var(--color), var(--color) var(--typography--underline--thickness), transparent var(--typography--underline--thickness));
+	background-position: left calc(-1 * var(--typography--underline--margin)) var(--typography--underline--position, top calc(var(--typography--underline--top) + 1em));
+	background-repeat: no-repeat;
+	background-size: calc(100% + var(--typography--underline--margin) + var(--typography--margin--right)) 100%;
+	text-shadow: var(--color--background) var(--typography--underline--clearing) 0, var(--color--background) var(--typography--underline--clearing) calc(var(--typography--underline--clearing) / 3), var(--color--background) 0 calc(var(--typography--underline--clearing) / 3), var(--color--background) calc(-1 * var(--typography--underline--clearing)) calc(var(--typography--underline--clearing) / 3), var(--color--background) calc(-1 * var(--typography--underline--clearing)) 0, var(--color--background) calc(-1 * var(--typography--underline--clearing)) calc(-1 * var(--typography--underline--clearing) / 3), var(--color--background) 0 calc(-1 * var(--typography--underline--clearing) / 3)
+}
+
+input {
+	margin-bottom: calc(var(--typography--margin--bottom) - var(--typography--shoulder--input) * 1em);
+	margin-top: calc(var(--typography--margin--top) - var(--typography--shoulder--input) * 1em);
+	width: calc(100% - var(--typography--margin--left) - var(--typography--margin--right))
+}
+
+@supports (-webkit-hyphens: none) {
+	input {
+		line-height: normal
+	}
+}
+
+input:before,
+input:after {
+	content: initial
+}
