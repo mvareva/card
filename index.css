@@ -294,7 +294,7 @@ header section {
 
 header section h1 .typed--active:not(.typed--typing):after {
 	animation-duration: 750ms;
-	animation-iteration-count: 2;
+	animation-iteration-count: infinite;
 	animation-name: blink;
 	animation-timing-function: linear;
 }
